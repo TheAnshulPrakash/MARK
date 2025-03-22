@@ -1,0 +1,28 @@
+{
+    "system": {
+        "theme": "metal",
+        "mode": "light",
+        "port": "COM9"
+    },
+    "robot": {
+        "volume": {
+            "increase": "volumeup",
+            "decrease": "volumedown"
+        },
+        "open": {
+            "chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+            "compiler": "C:/Users/rishi/AppData/Local/Programs/Microsoft VS Code/Code.exe",
+            "calculator": "calc.exe",
+            "task": "taskmgr.exe"
+        },
+        "machine": {
+            "tab": "ctrl tab",
+            "window": "alt tab"
+        },
+        "comm": {
+            "dataget": "",
+            "datasend": "",
+            "Temperature": "20"
+        }
+    }
+}
