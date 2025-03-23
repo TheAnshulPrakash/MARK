@@ -41,7 +41,7 @@ def ui():
     window.title("M.A.R.K.")
     Mark_icon(window)
     window.geometry("900x550")
-    window.minsize(900,530)
+    window.minsize(900,550)
 
     frame=ctk.CTkFrame(window, width=900, height=600)
     frame.pack(fill="both", padx=10, pady=10,expand=True)
@@ -50,6 +50,11 @@ def ui():
     frame_left = ctk.CTkFrame(frame, height=220, corner_radius=10)
     frame_left.pack_propagate(False)
     frame_left.pack(side="top", padx=15, pady=15, anchor="w",fill="x")
+
+    
+    frame_widgets = ctk.CTkFrame(frame_left, width=550, corner_radius=10)
+    frame_widgets.pack(side="left", padx=10, pady=10, fill="x")
+    frame_widgets.pack_propagate(False)
 
     frame_desktop = ctk.CTkFrame(frame_left,width=350)
     frame_desktop.pack(side="right",fill="x",padx=10,pady=10)
@@ -107,7 +112,9 @@ def ui():
 
     state={"0":"Select One"}
 
-    
+    button_widget.widgets(frame_widgets)
+    #button_widget.widgets(frame_widgets)
+
     def comm_port_select(clicked):
         
         print(clicked)
@@ -117,6 +124,7 @@ def ui():
             ConfigJSON.update_value("system.port",clicked)
             comm=SerialCommunication(port=clicked,baudrate=115200)
             comm.connect()
+            
             print("yes")
         elif clicked == "Select One":
             comm.disconnect()
@@ -180,7 +188,7 @@ def ui():
     
     
     
-    button_widget.buttons(frame_left)
+    
     
 ui()
 window.mainloop()

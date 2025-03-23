@@ -5,4 +5,4 @@ comm_port=Queue()
 
 
 
-comm_port_send=Queue(maxsize=2)
+comm_port_send=Queue()

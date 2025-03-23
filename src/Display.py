@@ -13,8 +13,6 @@ class DialogBox:
         box.insert("end",string)
         box.configure(state="disabled")
         
-        
-        
     def Serial_Box(parent):
         global Ser_Out        
         Ser_Out=ctk.CTkTextbox(parent)        
