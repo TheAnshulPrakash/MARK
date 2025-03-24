@@ -50,8 +50,7 @@ HomuChan_icon : Responsible for the app tile icon and the default image upon ope
 ###### Buttons:
 ButtonFrame
 
-- clickable_buttons : Contains 5 clickable buttons which can be used for any defined purpose
-- slider : Contains a slider which can be used for any Display or Set value
+Contains various widgets which can be customized as the user wants
 
 ###### Display:
 DialogBox:
@@ -64,31 +63,40 @@ DialogBox:
 - clear_text : To clear all the texts of the output_box
 - clear_text_1 : To clear all the texts of the Serial_Box
 - get_text : Maybe used to fetch texts of output_box
--robot_display : To display the commands  
+- robot_display : To display the robot commands
 
-###### TrySelf:
+###### data_json:
+ConfigJSON
 
-***The main class to call different files and their classes and pass their respective frames on where to place them***
+- load_config : Loads configuration.json file
+- get_value : Returns key value if a key path exists (Takes 1 argument)
+- update_value : Updates the value of the key_path (Takes 2 arguments)
+
+
+
+###### Main:
+
+***The main class to call different files and their classes ***
 
 Contains different frames to place different widgets
+Responsible for the main GUI
 
 This project is made keeping in mind to be completely customizable by the end user by some minor tweaks
 
 ### Basic Info:
 
-***This project uses Whisper AI model ("small") which on real time StT model consumes Memory of around***
-
 ***Default Baud Rate for communication is 115200 which can be changed under function 'port_select' in the class DropDownMenu***
+
+***Custom commands can be added in configurations.json***
 
 ### Currently Working On:
 
-* To be able to communicate to devices over WiFi communications
-* To perform Robot functions on computer
+* To be able to communicate to devices over WiFi communications using Flask
 * To also use LLM TtT models to understand basic speech and perform respective operations
-* To add more custom themes
 
-Looking forward for positive reviews for my work
+
+Looking forward for positive reviews and suggestions for my work
 
 *you can reach out to me at anshuldevacc@gmail.com*
 
-
+Thank You
