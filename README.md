@@ -4,6 +4,18 @@ This project focuses on controlling smart home based iot devices over serial com
 
 An advanced version of my previous project, Offering a sleek and modern ui using customTkinter with added custom widgets
 
+### Setting Up:
+
+This project was compiled using Python version 3.12.7
+
+The versions of the referenced libraries is provided under requirements.txt
+
+- Extract the MARK.zip file
+- All the directories are provided with respect to * src/ * folder hence it is necessary to keep all the sub python files and folders inside it
+- The main file is named as Main.py
+- To install dependencies, run `pip install -r requirements.txt`. 
+
+
 ##### Referenced libraries 
 
 -WhisperAI by OpenAi for speech to text model
