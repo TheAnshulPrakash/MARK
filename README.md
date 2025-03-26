@@ -4,6 +4,8 @@ This project focuses on controlling smart home based iot devices over serial com
 
 An advanced version of my previous project, Offering a sleek and modern ui using customTkinter with added custom widgets
 
+This project removes any need of server based tasks like live speech to text transcription or connecting to any server as it runs completely locally on your system offering complete privacy 
+
 ### Setting Up:
 
 This project was compiled using Python version 3.12.7
