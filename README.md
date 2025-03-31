@@ -108,8 +108,13 @@ This project is made keeping in mind to be completely customizable by the end us
 * To be able to communicate to devices over WiFi communications using Flask
 * To also use LLM TtT models to understand basic speech and perform respective operations
 
-
 Looking forward for positive reviews and suggestions for my work
+### Screen Shots
+![rime light](src/images/image1.png)
+![coffee dark](src/images/image2.png)
+
+
+
 
 *you can reach out to me at anshuldevacc@gmail.com*
 
